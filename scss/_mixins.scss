@@ -1,0 +1,56 @@
+@mixin list-unstyled {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+@mixin link-unstyled {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+@mixin icon {
+    content: url("../assets/icons/pen-tool.svg");
+    margin-left: 29px;
+    padding: 17px 21px;
+    border-radius: 84px;
+    background: #FFF;
+}
+
+@mixin icon-two {
+    content: url("../assets/icons/chart-2.svg");
+    margin-left: 168px;
+    padding: 17px 21px;
+    border-radius: 84px;
+    background: #FFF;
+
+}
+
+@mixin icon-three {
+    content: url("../assets/icons/blur.svg");
+    margin-left: 105px;
+    padding: 17px 21px;
+    border-radius: 84px;
+    background: #FFF;
+
+}
+
+@mixin icon-four {
+    content: url("../assets/icons/simcard.svg");
+    margin-left: 82px;
+    padding: 17px 22px;
+    border-radius: 84px;
+    background: #FFF;
+
+}
+
+@mixin icon-five {
+    content: url("../assets/icons/designtools.svg");
+    margin-left: 11px;
+    padding: 17px 21px;
+    border-radius: 84px;
+    background: #FFF;
+
+}

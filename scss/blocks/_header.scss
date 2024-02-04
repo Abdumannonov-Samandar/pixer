@@ -1,0 +1,77 @@
+/*-------------------------------------------------------HEADER STYLES START-----------------------------------------------------*/
+.site-header {
+    padding: 30px 0;
+    border-bottom: 1px solid #EEEEF4;
+    
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    
+    &__wrapper-start {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    &__nav {
+        display: flex;
+    }
+    
+    &__nav-list {
+        display: flex;
+        @include list-unstyled;
+        gap: 30px;
+    }
+    
+    &__item-link {
+        @include link-unstyled;
+        color: $colorPrimary;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0px;
+        
+        &:hover {
+            color: #1AAB7B;
+        }
+        &:active {
+            color: #1AAB7B;
+            opacity: 60%;
+        }
+    }
+    
+    &__btn-link {
+        @include link-unstyled;
+        color: #FFF;
+        border:1px solid #101010;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0px;
+        
+        background-color: $colorPrimary;
+        padding: 12px 24px;
+        border-radius: 6px;
+        gap: 10px;
+        
+        &:hover {
+            border:1px solid #1AAB7B;
+            color: #1AAB7B;
+            background-color: #FFF;
+        }
+        &:active {
+            color: #FFF;
+            background-color: $colorPrimary;
+            opacity: 60%;
+        }
+        
+        
+    }
+    
+}
+
+/*-------------------------------------------------------HEADER STYLES END-------------------------------------------------------*/

@@ -1,0 +1,110 @@
+/*------------------------------------------SERVICE STYLES START--------------------------------------*/
+
+.service {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background: #F2F4F6;
+    
+    
+    &__title {
+        margin-bottom: 40px;
+        color: #101010;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 140%;
+    }
+    
+    &__list {
+        @include list-unstyled;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+    
+    &__item {
+        margin-top: 0;
+        width: 100%;
+        max-width: 324px;
+        padding: 30px 30px;
+        border-radius: 6px;
+        border: 2px solid #E1E7ED;
+        background: #F2F4F6;
+
+        &:hover {
+            background-color: #1AAB7B;
+    
+        }
+    }
+
+    
+    &__item-title {
+        margin-bottom: 20px;
+        color: #101010;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 140%;
+
+        &:hover {
+            color: #FFF;
+        }
+
+        &.one::after {
+            @include icon;
+         }
+        
+         &.two::after {
+            @include icon-two;
+         }
+
+         &.three::after {
+            @include icon-three;
+         }
+
+         &.four::after {
+            @include icon-four;
+         }
+
+         &.five::after {
+            @include icon-five;
+         }
+
+    }
+
+   
+    
+    &__item-desc {
+        margin-bottom: 23px;
+        color: #636F87;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 150%;
+
+        &:hover {
+            color: #FFF;
+        }
+
+        &.one {
+            margin-bottom: 50px;
+        }
+        &.two {
+            margin-bottom: 80px;
+        }
+    }
+    
+    &__item-link {
+        @include link-unstyled;
+        color: #000;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 140%;
+        
+
+        &:hover {
+            color: #FFF;
+            text-decoration-line: underline;
+        }
+    }
+}
+
+/*------------------------------------------SERVICE STYLES END----------------------------------------*/
